@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Yolen</title>
   
-  
+  <subtitle>һ�й�����Ϊ����</subtitle>
   <link href="https://yolenlew.github.io/atom.xml" rel="self"/>
   
   <link href="https://yolenlew.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://yolenlew.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Yolen</name>
     
   </author>
   
