@@ -38,11 +38,11 @@
   </entry>
   
   <entry>
-    <title></title>
+    <title>ELK日志收集系统</title>
     <link href="https://yolenlew.github.io/2021/06/14/elk-ri-zhi-shou-ji-xi-tong-da-jian/"/>
     <id>https://yolenlew.github.io/2021/06/14/elk-ri-zhi-shou-ji-xi-tong-da-jian/</id>
     <published>2021-06-14T03:24:43.910Z</published>
-    <updated>2021-06-14T03:25:47.638Z</updated>
+    <updated>2021-06-14T05:38:26.037Z</updated>
     
     
       
@@ -55,6 +55,24 @@
     
     
     
+    <category term="日志" scheme="https://yolenlew.github.io/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+    <category term="elk" scheme="https://yolenlew.github.io/tags/elk/"/>
+    
+    <category term="elasticsearch" scheme="https://yolenlew.github.io/tags/elasticsearch/"/>
+    
+    <category term="logstash" scheme="https://yolenlew.github.io/tags/logstash/"/>
+    
+    <category term="kibana" scheme="https://yolenlew.github.io/tags/kibana/"/>
+    
+    <category term="docker" scheme="https://yolenlew.github.io/tags/docker/"/>
+    
+    <category term="java" scheme="https://yolenlew.github.io/tags/java/"/>
+    
+    <category term="logback" scheme="https://yolenlew.github.io/tags/logback/"/>
+    
+    <category term="日志" scheme="https://yolenlew.github.io/tags/%E6%97%A5%E5%BF%97/"/>
     
   </entry>
   
