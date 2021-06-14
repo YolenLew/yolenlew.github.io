@@ -30,7 +30,7 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Yolen" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+</head>
 
 
 
@@ -460,87 +460,94 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Logstash部署"><a href="#Logstash部署" class="headerlink" title="Logstash部署"></a>Logstash部署</h3><h3 id="一、环境准备"><a href="#一、环境准备" class="headerlink" title="一、环境准备"></a>一、环境准备</h3><h4 id="1-1-拉取镜像"><a href="#1-1-拉取镜像" class="headerlink" title="1.1 拉取镜像"></a>1.1 拉取镜像</h4><pre class=" language-sh"><code class="language-sh">docker pull logstash:7.6.2
-</code></pre>
+                <h3 id="Logstash部署"><a href="#Logstash部署" class="headerlink" title="Logstash部署"></a>Logstash部署</h3><h3 id="一、环境准备"><a href="#一、环境准备" class="headerlink" title="一、环境准备"></a>一、环境准备</h3><h4 id="1-1-拉取镜像"><a href="#1-1-拉取镜像" class="headerlink" title="1.1 拉取镜像"></a>1.1 拉取镜像</h4><pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">docker pull logstash:7.6.2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
 <h4 id="1-2-创建目录及文件"><a href="#1-2-创建目录及文件" class="headerlink" title="1.2 创建目录及文件"></a>1.2 创建目录及文件</h4><ul>
 <li>创建目录及文件</li>
 </ul>
-<pre class=" language-sh"><code class="language-sh">mkdir -p /mydata/logstash/config
-mkdir -p /var/logs
-touch /mydata/logstash/config/logstash.conf
-</code></pre>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">mkdir -p &#x2F;mydata&#x2F;logstash&#x2F;config
+mkdir -p &#x2F;var&#x2F;logs
+touch &#x2F;mydata&#x2F;logstash&#x2F;config&#x2F;logstash.conf<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
 <ul>
 <li>编辑配置文件<code>logstash.conf</code>，内容如下</li>
 </ul>
-<pre class=" language-ruby"><code class="language-ruby">input <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-  file<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+<pre class="line-numbers language-ruby" data-language="ruby"><code class="language-ruby">input <span class="token punctuation">&#123;</span>
+  file<span class="token punctuation">&#123;</span>
     path <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">[</span> <span class="token string">"/var/logs/**/*-debug.log"</span> <span class="token punctuation">]</span>
     codec<span class="token operator">=</span><span class="token operator">></span>json
     start_position <span class="token operator">=</span><span class="token operator">></span> <span class="token string">"beginning"</span>
     type <span class="token operator">=</span><span class="token operator">></span> <span class="token string">"debug"</span>
-  <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-  file<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+  <span class="token punctuation">&#125;</span>
+  file<span class="token punctuation">&#123;</span>
     path <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">[</span> <span class="token string">"/var/logs/**/*-error.log"</span> <span class="token punctuation">]</span>
     codec<span class="token operator">=</span><span class="token operator">></span>json
     start_position <span class="token operator">=</span><span class="token operator">></span> <span class="token string">"beginning"</span>
     type <span class="token operator">=</span><span class="token operator">></span> <span class="token string">"error"</span>
-  <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-  file<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+  <span class="token punctuation">&#125;</span>
+  file<span class="token punctuation">&#123;</span>
     path <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">[</span> <span class="token string">"/var/logs/**/*-record.log"</span> <span class="token punctuation">]</span>
     codec<span class="token operator">=</span><span class="token operator">></span>json
     start_position <span class="token operator">=</span><span class="token operator">></span> <span class="token string">"beginning"</span>
     type <span class="token operator">=</span><span class="token operator">></span> <span class="token string">"record"</span>
-  <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
 
-filter <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-  date<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+filter <span class="token punctuation">&#123;</span>
+  date<span class="token punctuation">&#123;</span>
     match <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">[</span> <span class="token string">"print_time"</span> <span class="token punctuation">,</span> <span class="token string">"ISO8601"</span> <span class="token punctuation">]</span>
     target <span class="token operator">=</span><span class="token operator">></span> <span class="token string">"@timestamp"</span>
-  <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-  mutate<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+  <span class="token punctuation">&#125;</span>
+  mutate<span class="token punctuation">&#123;</span>
     remove_field <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">[</span><span class="token string">"@version"</span><span class="token punctuation">,</span><span class="token string">"print_time"</span><span class="token punctuation">,</span><span class="token string">"fields"</span><span class="token punctuation">,</span><span class="token string">"host"</span><span class="token punctuation">,</span><span class="token string">"log"</span><span class="token punctuation">,</span><span class="token string">"prospector"</span><span class="token punctuation">,</span><span class="token string">"tags"</span><span class="token punctuation">]</span>
-  <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-  <span class="token keyword">if</span> <span class="token punctuation">[</span>type<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"record"</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-      json <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span>type<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">"record"</span> <span class="token punctuation">&#123;</span>
+      json <span class="token punctuation">&#123;</span>
         source <span class="token operator">=</span><span class="token operator">></span> <span class="token string">"message"</span>
         remove_field <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">[</span><span class="token string">"message"</span><span class="token punctuation">]</span>
-      <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-    <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
 
-output <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-  elasticsearch <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+output <span class="token punctuation">&#123;</span>
+  elasticsearch <span class="token punctuation">&#123;</span>
     hosts <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">[</span><span class="token string">"elasticsearch:9200"</span><span class="token punctuation">]</span>
-    index <span class="token operator">=</span><span class="token operator">></span> <span class="token string">"kkb-%&amp;#123;type&amp;#125;-%&amp;#123;+YYYY.MM.dd&amp;#125;"</span>
-  <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-</code></pre>
+    index <span class="token operator">=</span><span class="token operator">></span> <span class="token string">"kkb-%&#123;type&#125;-%&#123;+YYYY.MM.dd&#125;"</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
 <h3 id="二、创建容器"><a href="#二、创建容器" class="headerlink" title="二、创建容器"></a>二、创建容器</h3><ul>
 <li>创建指令</li>
 </ul>
-<pre class=" language-sh"><code class="language-sh">docker run -p 5045:5045 -p 9600:9600 --name logstash \
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">docker run -p 5045:5045 -p 9600:9600 --name logstash \
   --link elasticsearch \
-  -e TZ="Asia/Shanghai" \
-  -v /mydata/logstash/config/logstash.conf:/usr/share/logstash/config/logstash.conf \
-  -v /var/logs:/var/logs \
-  -d logstash:7.6.2 -f /usr/share/logstash/config/logstash.conf
-</code></pre>
+  -e TZ&#x3D;&quot;Asia&#x2F;Shanghai&quot; \
+  -v &#x2F;mydata&#x2F;logstash&#x2F;config&#x2F;logstash.conf:&#x2F;usr&#x2F;share&#x2F;logstash&#x2F;config&#x2F;logstash.conf \
+  -v &#x2F;var&#x2F;logs:&#x2F;var&#x2F;logs \
+  -d logstash:7.6.2 -f &#x2F;usr&#x2F;share&#x2F;logstash&#x2F;config&#x2F;logstash.conf<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <ul>
 <li>查看容器日志</li>
 </ul>
-<pre class=" language-sh"><code class="language-sh">docker logs -f -t --tail 10 logstash
-</code></pre>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">docker logs -f -t --tail 10 logstash<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <ul>
 <li>如果日志没有报错，且显示成功运行如下，说明部署成功</li>
 </ul>
-<pre class=" language-verilog"><code class="language-verilog"><span class="token number">2021</span><span class="token operator">-</span><span class="token number">05</span><span class="token operator">-</span><span class="token number">20</span>T19<span class="token punctuation">:</span><span class="token number">24</span><span class="token punctuation">:</span><span class="token number">57.650367856</span>Z <span class="token punctuation">[</span><span class="token number">2021</span><span class="token operator">-</span><span class="token number">05</span><span class="token operator">-</span><span class="token number">20</span>T01<span class="token punctuation">:</span><span class="token number">24</span><span class="token punctuation">:</span><span class="token number">57</span><span class="token punctuation">,</span><span class="token number">648</span><span class="token punctuation">]</span><span class="token punctuation">[</span>INFO <span class="token punctuation">]</span><span class="token punctuation">[</span>logstash<span class="token punctuation">.</span>agent           <span class="token punctuation">]</span> Successfully started Logstash API endpoint <span class="token operator">&amp;</span><span class="token number">#123</span><span class="token punctuation">;</span><span class="token punctuation">:</span>port<span class="token operator">=></span><span class="token number">9600</span><span class="token operator">&amp;</span><span class="token number">#125</span><span class="token punctuation">;</span>
-</code></pre>
+<pre class="line-numbers language-verilog" data-language="verilog"><code class="language-verilog"><span class="token number">2021</span><span class="token operator">-</span><span class="token number">05</span><span class="token operator">-</span><span class="token number">20</span>T19<span class="token punctuation">:</span><span class="token number">24</span><span class="token punctuation">:</span><span class="token number">57.650367856</span>Z <span class="token punctuation">[</span><span class="token number">2021</span><span class="token operator">-</span><span class="token number">05</span><span class="token operator">-</span><span class="token number">20</span>T01<span class="token punctuation">:</span><span class="token number">24</span><span class="token punctuation">:</span><span class="token number">57</span><span class="token punctuation">,</span><span class="token number">648</span><span class="token punctuation">]</span><span class="token punctuation">[</span>INFO <span class="token punctuation">]</span><span class="token punctuation">[</span>logstash<span class="token punctuation">.</span>agent           <span class="token punctuation">]</span> Successfully started Logstash API endpoint <span class="token operator">&#123;</span><span class="token punctuation">:</span>port<span class="token operator">=></span><span class="token number">9600</span><span class="token operator">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 
                 
             </div>
