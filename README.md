@@ -906,7 +906,7 @@ Java 应用线上问题排查思路、常用工具小结：[Java 应用线上问
 ```git
 commit -m "" -m "" -m "";
 ```
-2. 单引号
+2. 单引号：windows cmd下不一定可以
 ```git
 commit -m "
 第一行
@@ -915,3 +915,4 @@ commit -m "
 ";
 
 ```
+3. Git Bash测试双引号换行
