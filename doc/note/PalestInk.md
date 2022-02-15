@@ -611,6 +611,10 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
+- [我是一个请求，我该何去何从](https://bbs.huaweicloud.com/blogs/280796)
+
+
+
 #### 应用
 
 - [SpringCloud gateway 日志打印+参数校验](https://www.jianshu.com/p/d3b9d687da2c)
@@ -808,6 +812,24 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
+## OpenAPI
+
+- **[强大的前后端解耦方式-openapi-generator代码生成](https://toulondu.github.io/2020/07/17/%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%89%8D%E5%90%8E%E7%AB%AF%E8%A7%A3%E8%80%A6%E6%96%B9%E5%BC%8F-openapi-generator%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90/)
+
+
+
+- [OpenAPI学习笔记](https://blog.gmem.cc/openapi)
+
+
+
+
+
+
+
+
+
+
+
 # Java8新特性
 
 
@@ -957,6 +979,12 @@ Linux
 ## 设计模式
 
 - [二十三种设计模式修炼手册](https://www.cnblogs.com/Yee-Q/p/13326782.html)
+
+
+
+## 算法
+
+- [面试官最喜爱的TopK问题算法详解](https://zhuanlan.zhihu.com/p/76734219)
 
 
 
