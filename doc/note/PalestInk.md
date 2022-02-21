@@ -736,7 +736,7 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 ### 总述
 
-- [JAVA日志框架适配/冲突解决方案大全](https://juejin.cn/post/6945220055399399455)
+- [【可能全网最全】JAVA日志框架适配/冲突解决方案大全](https://juejin.cn/post/6945220055399399455)
 
 
 
@@ -747,6 +747,27 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 - [高性能 log4j 2 疑难杂症 - 怎样开启及验证全局异步](https://blog.csdn.net/w1047667241/article/details/115894754)
 
 
+
+### logback日志框架
+
+#### 框架介绍
+
+- LOGSTASH 学习小记：[LOGSTASH 学习小记](https://www.freesion.com/article/792210913/)
+
+#### 日志配置
+
+- [logback配置官网](http://logback.qos.ch/manual/configuration.html)**
+
+- [看完这个不会配置 logback ，请你吃瓜！](https://juejin.cn/post/6844903641535479821)******
+
+
+- [logback的使用和logback.xml详解](https://www.cnblogs.com/warking/p/5710303.html)***
+
+- [logback配置文件---logback.xml详解](https://www.cnblogs.com/gavincoder/p/10091757.html)
+
+- [logback配置详解 & 原理介绍](https://blog.csdn.net/u013332124/article/details/82286573)*
+
+- [logback自定义输出模板, 匹配ELK json格式](https://www.jianshu.com/p/254c0b2e4669)
 
 
 
