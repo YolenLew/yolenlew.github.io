@@ -839,6 +839,11 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 - **[强大的前后端解耦方式-openapi-generator代码生成](https://toulondu.github.io/2020/07/17/%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%89%8D%E5%90%8E%E7%AB%AF%E8%A7%A3%E8%80%A6%E6%96%B9%E5%BC%8F-openapi-generator%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90/)
 
+- [OpenAPI 规范摘要-CNBLOG](https://www.cnblogs.com/powerwu/articles/15270759.html)
+  - [OpenAPI 规范摘要-jianshu](https://www.jianshu.com/p/5365ef83252a)
+
+
+
 
 
 - [OpenAPI学习笔记](https://blog.gmem.cc/openapi)
@@ -847,9 +852,17 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
+# ServiceComb
 
+- [ServiceComb微服务开发框架介绍-云社区-华为云](https://bbs.huaweicloud.com/blogs/111706)
 
+- [service笔记](https://www.codenong.com/cs109090280/)
 
+- [如何基于ServiceComb实现文件下载功能](https://blog.csdn.net/looook/article/details/83826642)
+
+- [微服务引擎](https://bbs.huaweicloud.com/forum/forum-622-1.html)
+
+- [如何使用CSE实现文件下载](https://bbs.huaweicloud.com/forum/thread-12778-1-1.html)
 
 
 
