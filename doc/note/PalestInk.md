@@ -854,6 +854,8 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 # ServiceComb
 
+- [Apache ServiceComb Java Chassis 用户手册](https://www.mianquan.net/tutorial/ApacheServiceCombJavaChassis/)**
+
 - [ServiceComb微服务开发框架介绍-云社区-华为云](https://bbs.huaweicloud.com/blogs/111706)
 
 - [service笔记](https://www.codenong.com/cs109090280/)
