@@ -852,7 +852,9 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
-# ServiceComb
+
+
+## ServiceComb
 
 - [Apache ServiceComb Java Chassis 用户手册](https://www.mianquan.net/tutorial/ApacheServiceCombJavaChassis/)**
 
@@ -865,6 +867,32 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 - [微服务引擎](https://bbs.huaweicloud.com/forum/forum-622-1.html)
 
 - [如何使用CSE实现文件下载](https://bbs.huaweicloud.com/forum/thread-12778-1-1.html)
+
+
+
+## StackStorm
+
+### 基础原理
+
+- [StackStorm Documentation](https://docs.stackstorm.com/index.html)
+- [StackStorm-专栏-吴龙辉](https://blog.csdn.net/wlhdo71920145/category_7668625.html)
+- [Stackstorm的介绍与入门](https://blog.csdn.net/sxb0841901116/article/details/79826969)
+
+
+
+### 实战应用
+
+- 
+
+
+
+# DevOps
+
+## Openresty
+
+
+
+- [OpenResty 最佳实践](https://moonbingbing.gitbooks.io/openresty-best-practices/content/)
 
 
 
@@ -961,6 +989,8 @@ List<DocErrorSet> collect = list.stream().collect(
 
 
 
+
+
 **随机数**
 
 - [Java 中生成随机数的不同方法](https://xie.infoq.cn/article/629cd9ecfc6f1f3eb9f694d01)
@@ -976,6 +1006,16 @@ List<DocErrorSet> collect = list.stream().collect(
 - [除了Xshell，还有哪些趁手的Linux终端工具](https://blog.csdn.net/qq_42534026/article/details/105890922)
   - MobaXterm
   - FinalShell
+
+
+
+## 工具类
+
+### Guava
+
+- [强大的 Guava 工具类](https://www.cnblogs.com/rickiyang/p/14661374.html)
+
+
 
 
 
