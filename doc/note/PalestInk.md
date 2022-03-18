@@ -12,6 +12,10 @@
 
 
 
+## 字符串
+
+- [美团面试官问我一个字符的String.length()是多少](https://juejin.cn/post/6844904036873814023)
+
 
 
 ## 反射
@@ -882,7 +886,7 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 ### 实战应用
 
-- 
+- [**携程运维自动化平台，上万服务器变更也可以很轻松**](https://blog.51cto.com/u_15127599/2927015)
 
 
 
