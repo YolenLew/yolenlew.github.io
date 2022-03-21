@@ -1013,6 +1013,16 @@ List<DocErrorSet> collect = list.stream().collect(
 
 
 
+## 在线工具
+
+### 绘图
+
+- [在线生成ascii字符画网站字符图案在线生成工具](https://blog.csdn.net/qq_31708763/article/details/119712041)
+
+
+
+
+
 ## 工具类
 
 ### Guava
@@ -1020,6 +1030,10 @@ List<DocErrorSet> collect = list.stream().collect(
 - [强大的 Guava 工具类](https://www.cnblogs.com/rickiyang/p/14661374.html)
 
 
+
+## 经验技巧
+
+- [java经验集锦 - 星朝-cnblogs](https://www.cnblogs.com/jpfss/tag/java%E7%BB%8F%E9%AA%8C%E9%9B%86%E9%94%A6/)
 
 
 
@@ -1072,6 +1086,12 @@ Linux
 
 - [二十三种设计模式修炼手册](https://www.cnblogs.com/Yee-Q/p/13326782.html)
 
+- [设计模式内容聚合-Java知音](https://mp.weixin.qq.com/s/XLyvUBftV2UFamvWyYIIRw)
+- [工作流引擎 -开源中国](https://www.oschina.net/project/tag/129/workflow?lang=19&os=0&sort=view&p=4)
+- [workFlow学习总结---------------------常用的工作流引擎](https://blog.csdn.net/liuwenbiao1203/article/details/53158254?spm=1001.2101.3001.6650.7&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EOPENSEARCH%7ERate-7.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EOPENSEARCH%7ERate-7.pc_relevant_antiscanv2&utm_relevant_index=14)
+
+
+
 
 
 ## 算法
@@ -1119,6 +1139,33 @@ Linux
 ## 消息推送
 
 - [websocket_netty-socketio](https://github.com/mrniko/netty-socketio)
+
+
+
+
+
+## 工作流
+
+### 基础概念
+
+- [Flowable初级使用手册](https://blog.csdn.net/yyzs1994/article/details/103815057)
+
+
+
+### 技术文摘
+
+- [自研工作流-R1Mentality](https://juejin.cn/column/7051918982089015309)
+- [工作流引擎原理-打造一款适合自己的工作流引擎](https://juejin.cn/post/6844904167463485453)
+
+
+
+### 开源项目
+
+- **[肇新智慧物业管理系统](https://gitee.com/fanhuibin1/zhaoxinpms)**
+
+- **[Spring-activiti](https://gitee.com/shenzhanwang/Spring-activiti)**
+
+- **[RuoYi-flowable](https://gitee.com/tony2y/RuoYi-flowable)**
 
 
 
