@@ -31,6 +31,9 @@
 ## IO流
 
 - [InputStream,String,File相互转化](https://www.cnblogs.com/cpcpc/archive/2011/07/08/2122996.html)
+- [java中jar包内的类访问jar包内部的资源文件的路径问题](https://blog.csdn.net/mm_bit/article/details/50372229)
+
+- [深入jar包：从jar包中读取资源文件getResourceAsStream ](https://www.cnblogs.com/haimishasha/p/9971386.html)
 
 
 
