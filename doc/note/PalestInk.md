@@ -28,6 +28,12 @@
 
 
 
+## IO流
+
+- [InputStream,String,File相互转化](https://www.cnblogs.com/cpcpc/archive/2011/07/08/2122996.html)
+
+
+
 # 集合框架
 
 - [【Java面试题】List如何一边遍历，一边删除？](https://www.cnblogs.com/zwwhnly/p/12530819.html)
@@ -1048,6 +1054,7 @@ List<DocErrorSet> collect = list.stream().collect(
 ## 经验技巧
 
 - [java经验集锦 - 星朝-cnblogs](https://www.cnblogs.com/jpfss/tag/java%E7%BB%8F%E9%AA%8C%E9%9B%86%E9%94%A6/)
+- [java从jar包中读取资源文件](https://jieniyimiao.blog.csdn.net/article/details/88807557)
 
 
 
