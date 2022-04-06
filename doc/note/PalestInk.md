@@ -730,12 +730,24 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 - [spring-session用mysql实现session共享实践](https://www.cnblogs.com/davidwang456/p/10361550.html)
 
 - [Spring Boot 应用中 Spring Session 的配置(1) : 自动配置 SessionAutoConfiguration](https://blog.csdn.net/andy_zhang2007/article/details/94608155)
+- [spring-session（一）揭秘 ](https://www.cnblogs.com/lxyit/p/9672097.html)
 
 
 
 #### Samples
 
 - [spring-projects-github](https://github.com/spring-projects/spring-session)
+
+
+
+### 实战
+
+- [spring boot获取session的值为null问题](https://blog.csdn.net/qq_40731976/article/details/102624876)
+  - [axios.defaults.withCredentials = true 前端跨域传递Cookie设置](https://blog.csdn.net/xiaoyuer_2020/article/details/109000664)
+
+
+
+
 
 
 
