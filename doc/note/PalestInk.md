@@ -558,6 +558,14 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
+### 技巧
+
+- [SpringMVC路径匹配中使用通配符问题](http://www.codebaoku.com/it-java/it-java-222235.html)
+- spring queryparam用map接收
+- [spring拾遗(三)——用map接收请求参数的问题解决](https://blog.csdn.net/qq_28885149/article/details/53998524)
+
+
+
 ## SpringBoot
 
 ### 原理技术
