@@ -276,6 +276,12 @@
 
 
 
+### ConcurrentHashMap
+
+- [ConcurrentHashMap一定线程安全吗](https://juejin.cn/post/6917884547031891982)
+
+
+
 ## 阻塞队列
 
 
@@ -386,11 +392,17 @@
 
 ## 实际案例
 
+### 基础概述
+
+- [JVM调优参数简介、调优目标及调优经验](https://blog.csdn.net/jisuanjiguoba/article/details/80176223)
+
+
+
 ### JVM调优
 
 - [记一次线上JVM优化](https://blog.csdn.net/luxiaoruo/article/details/116571355)
 
-
+- [一次完整的JVM堆外内存泄漏故障排查记录 | HeapDump性能社区](https://www.heapdump.cn/article/1821465)
 
 
 
@@ -1064,7 +1076,13 @@ List<DocErrorSet> collect = list.stream().collect(
 
 
 
+### http测试
 
+- [『居善地』接口测试 — 7、补充：Httpbin介绍](https://blog.csdn.net/Liuyuelinjiayou/article/details/112782847)
+
+- [ImportError: cannot import name ‘BaseResponse‘ from ‘werkzeug.wrappers‘](https://blog.csdn.net/m0_51973071/article/details/124111746)
+  - 可以使用以下命令降级安装werkzeug：
+  - pip install --upgrade werkzeug==0.16.1
 
 ## 工具类
 
