@@ -396,6 +396,18 @@
 
 - [JVM调优参数简介、调优目标及调优经验](https://blog.csdn.net/jisuanjiguoba/article/details/80176223)
 
+- 
+
+
+
+
+
+### 实操
+
+- [ Linux查看某个服务JVM的GC和堆内存使用情况_攻城日记的博客-CSDN博客_查看jvm内存使用情况](https://blog.csdn.net/qq_38973841/article/details/95589037)
+
+
+
 
 
 ### JVM调优
@@ -525,7 +537,8 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 - [想用@Autowired注入static静态成员？官方不推荐你却还偏要这么做](https://developer.aliyun.com/article/768082)
 
-
+- [如何区分spring中的@Component、@Repository、@Service注解](https://juejin.cn/post/6960856873650094093)
+  - [What's the difference between @Component, @Repository & @Service annotations in Spring?](https://stackoverflow.com/questions/6827752/whats-the-difference-between-component-repository-service-annotations-in)
 
 - [图解Spring解决循环依赖♻️](https://juejin.cn/post/6844904122160775176)
   - 个人认为并不能理解为缓存，缓存的最终目的是为了解决性能，而这三个map的目的更多的是标识一个bean的创建状态。比如在单例池中的表示bean已经完整的被创建，在单例工厂中的表示bean正在被创建，在early中的表示已经被创建但不完整
@@ -575,6 +588,16 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 - [SpringMVC路径匹配中使用通配符问题](http://www.codebaoku.com/it-java/it-java-222235.html)
 - spring queryparam用map接收
 - [spring拾遗(三)——用map接收请求参数的问题解决](https://blog.csdn.net/qq_28885149/article/details/53998524)
+
+
+
+### 类路径
+
+- [java项目中的classpath到底是什么](https://segmentfault.com/a/1190000015802324)
+
+
+
+
 
 
 
@@ -779,7 +802,11 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
+### 多表关联查询
 
+- [mybatis-plus-join应用之mybatis plus 进行连表查询（纯代码）](https://zhuanlan.zhihu.com/p/368591782)
+
+- [MyBatis-Plus 复杂多表查询](https://blazar.blog.csdn.net/article/details/121973513)
 
 
 
@@ -1089,6 +1116,20 @@ List<DocErrorSet> collect = list.stream().collect(
 ### Guava
 
 - [强大的 Guava 工具类](https://www.cnblogs.com/rickiyang/p/14661374.html)
+
+
+
+### SnakeYAML
+
+- [JAVA使用SnakeYAML解析与序列化YAML](https://www.cnblogs.com/xiaoqi/p/SnakeYAML.html)
+
+
+
+### JSON
+
+- [fastjson实现原理是什么？Fastjson如何解析json数据](https://qqe2.com/java/post/3406.html)
+
+
 
 
 
