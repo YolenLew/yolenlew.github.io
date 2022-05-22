@@ -810,9 +810,11 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
+### 数据映射
 
+- [MybatisPlus处理Mysql的json类型](https://blog.csdn.net/qq_35098526/article/details/117912886)
 
-
+- [优化MyBatisPlus的autoResultMap生成策略](https://blog.csdn.net/qq_39609993/article/details/118456767)
 
 
 
