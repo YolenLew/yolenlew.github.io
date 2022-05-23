@@ -422,6 +422,14 @@
 
 ## MySQL
 
+### JSON查询
+
+- ***[mysql json 使用 类型 查询 函数 ](https://www.cnblogs.com/ooo0/p/9309277.html)
+
+- [【mysql】mysql5.7支持的json字段查询【mybatis】](https://www.cnblogs.com/sxdcgaq8080/p/10876745.html)
+
+
+
 ### 联表查询
 
 - [面试官疯狂问我联表查询怎么办？](https://www.bilibili.com/read/cv12465047)
@@ -452,6 +460,8 @@
   >    2. rows：每一步的结果必须都是无限向最终结果数量靠拢
 
 - [面试题：在日常工作中怎么做MySQL优化的？](https://database.51cto.com/art/202106/666558.htm)
+
+
 
 
 
@@ -1130,6 +1140,14 @@ List<DocErrorSet> collect = list.stream().collect(
 ### JSON
 
 - [fastjson实现原理是什么？Fastjson如何解析json数据](https://qqe2.com/java/post/3406.html)
+
+
+
+
+
+### JSONPath
+
+- [JSONPath 功能](https://www.zabbix.com/documentation/current/zh/manual/config/items/preprocessing/jsonpath_functionality)
 
 
 
