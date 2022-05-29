@@ -994,6 +994,22 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
+
+
+# 单元测试
+
+## Spock框架
+
+- [Spock单元测试框架介绍以及在美团优选的实践](https://tech.meituan.com/2021/08/06/spock-practice-in-meituan.html)
+
+- [Spock系列- 老K的Java博客](https://javakk.com/category/spock)
+
+
+
+
+
+
+
 # Java8新特性
 
 
@@ -1071,9 +1087,9 @@ List<DocErrorSet> collect = list.stream().collect(
 
 ## 软件配置
 
-- [github克隆走v2ray代理的配置](https://www.cuger.top/github%E5%85%8B%E9%9A%86%E8%B5%B0v2ray%E4%BB%A3%E7%90%86%E7%9A%84%E9%85%8D%E7%BD%AE/)
-
-- [github设置v2ray代理的配置](https://www.lwk4you.com/archives/ti-gao-fang-wen-g-i-t-h-u-b-su-du)
+- [git 设置和取消代理](https://gist.github.com/laispace/666dd7b27e9116faece6)
+- ~~[github克隆走v2ray代理的配置](https://www.cuger.top/github%E5%85%8B%E9%9A%86%E8%B5%B0v2ray%E4%BB%A3%E7%90%86%E7%9A%84%E9%85%8D%E7%BD%AE/)~~
+- ~~[github设置v2ray代理的配置](https://www.lwk4you.com/archives/ti-gao-fang-wen-g-i-t-h-u-b-su-du)~~
 
 
 
