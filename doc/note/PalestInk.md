@@ -533,6 +533,11 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
+## Velocity SQLTemplate
+
+- [实践 -- Velocity渲染SQL如何避免注入？](https://mrdear.cn/posts/work-design-velocity-sql-inject.html)
+  - [工作 -- Velocity渲染SQL如何避免注入？](https://cloud.tencent.com/developer/article/1573670)
+
 
 
 # 框架技术
@@ -712,12 +717,26 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 ## SpringSecurity
 
+### 基础概述
+
+- [springBoot 和 spring security 版本对应关系](https://blog.csdn.net/xhf852963/article/details/121494936)
+
+
+
 ### 功能拓展
 
 - [15.SpringSecurity-短信登录开发](https://segmentfault.com/a/1190000022050807)
 - [Spring Security 解析(四) ——短信登录开发](https://juejin.im/post/5d6d2c7b6fb9a06b032018c8)
 
 - ***[Spring Security OAuth2 微服务认证中心自定义授权模式扩展以及常见登录认证场景下的应用实战](https://www.cnblogs.com/haoxianrui/p/15421760.html)
+
+
+
+### 实践应用
+
+- [关于Spring Security（CVE-2022-22978）漏洞解决方案](https://sweetolive.github.io/2022/05/27/Spring-Security-CVE-2022-22978/)
+
+
 
 
 
@@ -997,6 +1016,12 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 # 单元测试
+
+## Mockito框架
+
+- [Mockito 详解 - 梁飞的博客](https://liangfei.me/tags/Mockito/)
+
+
 
 ## Spock框架
 
@@ -1312,7 +1337,14 @@ Linux
 
 # 生产案例
 
+## 业务开发常见错误
 
+- [笔记-业务开发常见错误](https://blog.csdn.net/belongtocode/article/details/113684078)
+- [专栏-业务开发常见错误100例](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/Java%20%E4%B8%9A%E5%8A%A1%E5%BC%80%E5%8F%91%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%20100%20%E4%BE%8B)
+
+
+
+## JavaGuide
 
 **1、Java 基础、线程池、JVM** 
 
