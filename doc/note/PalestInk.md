@@ -37,6 +37,41 @@
 
 
 
+
+
+## 日期API
+
+### A哥博客汇总
+
+- [全网最全！彻底弄透Java处理GMT/UTC日期时间](https://www.cnblogs.com/yourbatman/p/14307194.html)
+- [【小家java】java8新特性之—全新的日期、时间API（完全实现了JSR 310规范）](https://blog.csdn.net/f641385712/article/details/81429389)
+- [LocalDateTime、OffsetDateTime、ZonedDateTime互转，这一篇绝对喂饱你](https://www.cnblogs.com/yourbatman/p/14324575.html)
+
+
+
+### 实践应用
+
+- [boot -LocalDateTime 序列化和反序列化时间戳](https://blog.csdn.net/u013887008/article/details/121055921)
+
+
+
+
+
+## 泛型
+
+### 基础概念
+
+- [java泛型中extends 和 super的区别](https://www.cnblogs.com/austinspark-jessylu/p/8118456.html)***
+  - 总结：
+  - ? 通配符类型
+  - <? extends T> 表示类型的上界，表示参数化类型的可能是T 或是 T的子类
+  - <? super T> 表示类型下界（Java Core中叫超类型限定），表示参数化类型是此类型的超类型（父类型），直至Object
+  - extends 可用于返回类型限定，不能用于参数类型限定
+  - super 可用于参数类型限定，不能用于返回类型限定
+  - 带有super超类型限定的通配符可以向泛型对易用写入，带有extends子类型限定的通配符可以向泛型对象读取。
+
+
+
 # 集合框架
 
 - [【Java面试题】List如何一边遍历，一边删除？](https://www.cnblogs.com/zwwhnly/p/12530819.html)
@@ -525,6 +560,14 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
+## H2内存数据库
+
+- [[Java] h2数据库初始化表失败问题解决记录](https://blog.csdn.net/petrel2015/article/details/81784288)
+
+
+
+
+
 ## 多数据源
 
 - [Spring多数据源、动态数据源源码解析](https://blog.csdn.net/ty5546/article/details/81609135)
@@ -537,6 +580,12 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 - [实践 -- Velocity渲染SQL如何避免注入？](https://mrdear.cn/posts/work-design-velocity-sql-inject.html)
   - [工作 -- Velocity渲染SQL如何避免注入？](https://cloud.tencent.com/developer/article/1573670)
+
+- [记录-velocity模板生成sql语句及使用自定义指令](https://blog.csdn.net/bfss_11/article/details/119569419)
+
+- [使用不同模板引擎beetl、FreeMarker、Velocity动态解析sql的方法](https://www.cnblogs.com/YuyuanNo1/p/9810767.html)
+
+
 
 
 
@@ -611,6 +660,10 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 - [java项目中的classpath到底是什么](https://segmentfault.com/a/1190000015802324)
 
 
+
+### 源码解读
+
+- [请别再问Spring Bean的生命周期了！](https://www.jianshu.com/p/1dec08d290c1)
 
 
 
@@ -847,6 +900,22 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
+### 动态查询
+
+- [mybatis if else if 条件判断SQL片段表达式取值和拼接](https://blog.csdn.net/u011738045/article/details/120483615)
+
+
+
+
+
+
+
+## 框架技术
+
+- [Java SPI 使用及原理分析-董宗磊的博客 ](https://dongzl.github.io/2021/01/16/04-Java-Service-Provider-Interface/)
+
+
+
 ## 日志框架
 
 
@@ -896,9 +965,11 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
+## Dubbo
 
+- [深度解析dubbo源码系列](https://inetyoung.blog.csdn.net/article/details/107615058)
 
-
+- [dubbo整体框架设计](https://blog.csdn.net/zhoushimiao1990/article/details/117033648)
 
 
 
@@ -1031,6 +1102,14 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
+## Jmeter工具
+
+### 随机参数
+
+- [Jmeter中有关随机参数的那些事](https://cloud.tencent.com/developer/article/1506297)
+
+
+
 
 
 
@@ -1040,6 +1119,19 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 ## Stream流
+
+### 基础概念
+
+
+
+#### collect方法
+
+- [Java8 Stream流中的 collect() 方法，远比你想象中的强大](https://zhuanlan.zhihu.com/p/545191085)
+  - 数据收集、聚合、分组、分区、拼接操作
+
+
+
+
 
 ```java
 // 流处理：Stream<T> sorted(Comparator<? super T> comparator)
@@ -1164,6 +1256,8 @@ List<DocErrorSet> collect = list.stream().collect(
   - 可以使用以下命令降级安装werkzeug：
   - pip install --upgrade werkzeug==0.16.1
 
+
+
 ## 工具类
 
 ### Guava
@@ -1238,6 +1332,21 @@ Linux
 
 
 
+### 正则在线
+
+- 正则在线测试及匹配结果查看：https://regex101.com/
+- RegExr: Learn, Build, & Test RegEx：https://regexr.com/
+- 正则可视化：https://tooltt.com/regulex/
+- regular-expression-visualizer：https://blog.robertelder.org/regular-expression-visualizer/
+
+
+
+### 正则提取
+
+- Java正则表达式匹配字符串并提取中间的值：https://blog.csdn.net/moshowgame/article/details/94447007
+
+
+
 ## 数据结构
 
 ### 红黑树
@@ -1253,6 +1362,17 @@ Linux
 - [设计模式内容聚合-Java知音](https://mp.weixin.qq.com/s/XLyvUBftV2UFamvWyYIIRw)
 - [工作流引擎 -开源中国](https://www.oschina.net/project/tag/129/workflow?lang=19&os=0&sort=view&p=4)
 - [workFlow学习总结---------------------常用的工作流引擎](https://blog.csdn.net/liuwenbiao1203/article/details/53158254?spm=1001.2101.3001.6650.7&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EOPENSEARCH%7ERate-7.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EOPENSEARCH%7ERate-7.pc_relevant_antiscanv2&utm_relevant_index=14)
+
+- [设计模式 - Overview | Java 全栈知识体系 (pdai.tech)](https://pdai.tech/md/dev-spec/pattern/1_overview.html)
+
+
+
+### 实例
+
+- JAVA编程思想（三）去掉别扭的if，自注册策略模式优雅满足开闭原则：https://juejin.cn/post/6844904145879564302
+- Spring 实现策略模式--自定义注解方式解耦if...else：https://www.cnblogs.com/zhaord/p/14800081.html
+
+- 巧用 Spring 自动注入快速实现策略模式：https://cloud.tencent.com/developer/article/1707691
 
 
 
@@ -1336,6 +1456,14 @@ Linux
 
 
 # 生产案例
+
+## 问题排查
+
+#### SpringBoot
+
+- [记一次SpringBoot启动异常，jar冲突问题的排查分析](https://mp.weixin.qq.com/s/5QEXg60sNGSUS0xKVtC1QA)
+
+
 
 ## 业务开发常见错误
 
