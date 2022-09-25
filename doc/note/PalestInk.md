@@ -37,6 +37,12 @@
 
 
 
+## 消息格式化
+
+- [Java中的消息格式化:MessageFormat](http://autuan.top/2019/10/31/message-format/)
+
+
+
 
 
 ## 日期API
@@ -80,6 +86,13 @@
 
 ## List
 
+### 应用技巧
+
+- [apache和guava工具类partition方法分批list](https://blog.csdn.net/Mint6/article/details/102875278)
+  - 把iterable按指定大小分割，得到的子集都不能进行修改操作！！
+
+
+
 
 
 ## Map
@@ -89,6 +102,14 @@
 ### HashMap
 
 - [HashMap源码深度解析](https://www.wolai.com/sf5JBE9KniHcyFXU7cU3qJ)[download]
+
+
+
+
+
+### 应用
+
+- [Using lambda to format Map into String](https://stackoverflow.com/questions/30237577/using-lambda-to-format-map-into-string)
 
 
 
@@ -126,7 +147,11 @@
 
 - [Java线程池实现原理及其在美团业务中的实践](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html)
 
+> CSDN博客专栏
 
+- [yemuxiaweiliang的博客 - 并发编程](https://blog.csdn.net/yemuxiaweiliang/category_9691248.html)
+
+- [并发编程之定时任务&定时线程池原理解析](https://blog.csdn.net/org_hjh/article/details/110942658)
 
 
 
@@ -409,6 +434,12 @@
 
 
 
+### 分批调用接口
+
+- [**Java 数据分批调用接口的正确姿势**](https://blog.csdn.net/w605283073/article/details/101399427)
+
+
+
 
 
 ## 并发问题
@@ -440,6 +471,7 @@
 ### 实操
 
 - [ Linux查看某个服务JVM的GC和堆内存使用情况_攻城日记的博客-CSDN博客_查看jvm内存使用情况](https://blog.csdn.net/qq_38973841/article/details/95589037)
+- [Java内存分析工具MAT(Memory Analyzer Tool)安装使用实例](https://blog.csdn.net/Jin_Kwok/article/details/80326088)
 
 
 
@@ -597,8 +629,6 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 - [《孙哥说 Spring》](https://blog.csdn.net/weixin_43734095/category_10027484.html)
 
-
-
 - [想用@Autowired注入static静态成员？官方不推荐你却还偏要这么做](https://developer.aliyun.com/article/768082)
 
 - [如何区分spring中的@Component、@Repository、@Service注解](https://juejin.cn/post/6960856873650094093)
@@ -644,6 +674,20 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 ### AOP
 
 - [Spring AOP](https://www.yuque.com/baiyunhecanggou/qnvllg/gtycfo)
+
+
+
+### 国际化
+
+- [Spring国际化i18n ](https://www.cnblogs.com/myitnews/p/14029345.html)
+
+
+
+### 事件机制
+
+- [Spring启动后获取所有拥有特定注解的Bean，注解的属性值](https://www.cnblogs.com/duanxz/p/3423450.html)
+
+- [Spring中的ApplicationListener和ContextRefreshedEvent的理解](https://blog.csdn.net/zhuifengshaonian201/article/details/79497282)
 
 
 
@@ -1114,7 +1158,26 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
+## 构造神器EasyRandom
+
+- [随机对象生成器-EasyRandom](https://blog.csdn.net/qq_43162613/article/details/119927011)
+
+
+
+
+
 # Java8新特性
+
+## Optional
+
+- [**使用 Java 8 Optional 的正确姿势**](https://www.imooc.com/article/37092)
+
+> 一句话小结: 使用 `Optional` 时尽量不直接调用 `Optional.get()` 方法, `Optional.isPresent()` 更应该被视为一个私有方法, 应依赖于其他像 `Optional.orElse()`, `Optional.orElseGet()`, `Optional.map()` 等这样的方法
+> 作者：陪伴而非守候
+> 链接：https://www.imooc.com/article/37092
+> 来源：慕课网
+
+
 
 
 
@@ -1131,7 +1194,9 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
+### Collector接口
 
+- [深入介绍和使用Java8的Collector接口](https://blog.csdn.net/kingtok/article/details/122623097)
 
 ```java
 // 流处理：Stream<T> sorted(Comparator<? super T> comparator)
@@ -1156,6 +1221,16 @@ List<DocErrorSet> collect = list.stream().collect(
 - [Java 8中集合优雅快速的处理方式](https://mp.weixin.qq.com/s/RyHkj1yZTUdLqRotT-zmxQ)
 
 - [Java流 - Java流API_w3school教程](https://www.w3cschool.cn/java/java-stream-api.html)
+
+
+
+### Reduce方法
+
+- 在 Java 8 中，`Stream.reduce()`合并流的元素并产生单个值。
+
+- [Java 8 Stream.reduce() 使用示例 ](https://www.cnblogs.com/gaohanghang/p/12390233.html)
+
+
 
 
 
