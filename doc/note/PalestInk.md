@@ -1011,13 +1011,22 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 ## Dubbo
 
+### 源码解读
+
 - [深度解析dubbo源码系列](https://inetyoung.blog.csdn.net/article/details/107615058)
 
 - [dubbo整体框架设计](https://blog.csdn.net/zhoushimiao1990/article/details/117033648)
 
+- [Dubbo源码系列v1](https://imlql.cn/categories/rpc/Dubbo%E6%BA%90%E7%A0%81%E7%B3%BB%E5%88%97v1/)
+  - [CSDN-Dubbo框架原理源码](https://blog.csdn.net/youth_lql/category_9558261.html)
+
+- [CSDN-深度解析dubbo技术专栏](https://inetyoung.blog.csdn.net/category_9148299_2.html)
 
 
 
+
+
+- [30万行的框架代码，这样给Dubbo加扩展！](https://mp.weixin.qq.com/s?__biz=MzIwMDEzOTYzNA==&mid=2247487822&idx=1&sn=67291df7e9b4b3bb7f58ca5e620a204c&chk**=9680e753a1f76e455723e1e099385a95ddff88796ca9fdd1f2507d3052fb0f64f341684e64a3#rd)
 
 
 
