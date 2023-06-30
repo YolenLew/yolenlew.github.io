@@ -103,7 +103,9 @@
 
 - [HashMap源码深度解析](https://www.wolai.com/sf5JBE9KniHcyFXU7cU3qJ)[download]
 
-
+- [HashMap 链表插入方式 → 头插为何改成尾插 ?](https://www.cnblogs.com/youzhibing/p/13915116.html)
+- [HashMap 1.7 为什么不安全 头插法为什么会死循环？](https://blog.csdn.net/weixin_53651170/article/details/129488807)
+- [hashmap线程安全吗](https://worktile.com/kb/ask/29637.html)
 
 
 
@@ -294,9 +296,25 @@
 
 #### 其他
 
+- [从 synchronized 到 CAS 和 AQS - 彻底弄懂 Java 各种并发锁](https://juejin.cn/post/6844903759047294983)
+
 
 
 ### Lock接口
+
+- [Java锁--Lock实现原理(底层实现)](https://blog.csdn.net/Luxia_24/article/details/52403033)
+
+
+
+#### ReentrantLock
+
+- [理解ReentrantLock的公平锁和非公平锁](https://zhuanlan.zhihu.com/p/45305463)
+
+
+
+
+
+
 
 ### 队列同步器
 
@@ -308,15 +326,11 @@
 
 #### 接口与实例
 
+
+
 #### 实现分析
 
-### 重入锁
 
-#### ReentrantLock
-
-- [理解ReentrantLock的公平锁和非公平锁](https://zhuanlan.zhihu.com/p/45305463)
-
-### 读写锁
 
 ### LockSupport工具
 
@@ -413,6 +427,16 @@
 > [leesf](https://home.cnblogs.com/u/leesf456/)
 
 - [【JUC】JDK1.8源码分析之CountDownLatch（五）](https://www.cnblogs.com/leesf456/p/5406191.html)
+- [慢sql引发的线程管理问题countDownLatch](https://blog.csdn.net/weixin_39917291/article/details/111123126)
+
+
+
+### CompletableFuture
+
+- [记一次生产中使用CompletableFuture遇到的坑](https://juejin.cn/post/7165704556540755982)
+- [CompletableFuture 引发的线上问题-公用一个线程池导致死锁](https://blog.csdn.net/Zichen_Lin/article/details/127354165)
+
+
 
 
 
@@ -462,10 +486,6 @@
 
 - [JVM调优参数简介、调优目标及调优经验](https://blog.csdn.net/jisuanjiguoba/article/details/80176223)
 
-- 
-
-
-
 
 
 ### 实操
@@ -483,6 +503,11 @@
 
 - [一次完整的JVM堆外内存泄漏故障排查记录 | HeapDump性能社区](https://www.heapdump.cn/article/1821465)
 
+
+
+### OOM处理
+
+- [阿里云OSSClient使用不当引起的OOM问题分析](https://www.cnblogs.com/dcz2015/p/15947137.html)
 
 
 # 数据库
@@ -650,7 +675,7 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 
 
 
-### Spring格式校验及统一异常处理
+### 格式校验及异常处理
 
 - 参考：[springboot中处理校验逻辑的两种方式，真的很机智！](http://www.macrozheng.com/#/technology/springboot_validator?id=springboot%e4%b8%ad%e5%a4%84%e7%90%86%e6%a0%a1%e9%aa%8c%e9%80%bb%e8%be%91%e7%9a%84%e4%b8%a4%e7%a7%8d%e6%96%b9%e5%bc%8f%ef%bc%8c%e7%9c%9f%e7%9a%84%e5%be%88%e6%9c%ba%e6%99%ba%ef%bc%81)
 
@@ -668,6 +693,12 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 - **统一异常处理介绍及实战**：[统一异常处理介绍及实战](https://www.jianshu.com/p/3f3d9e8d1efa)、https://mp.weixin.qq.com/s/nQtkqN9IwZek6LX1Bvgf6A***
 
 - 统一异常处理介绍及实战——支持自定义错误信息：[统一异常处理介绍及实战——支持自定义错误信息](https://www.jianshu.com/p/179daa24ef52)
+
+
+
+### IOC
+
+- [Spring IOC详解及Bean生命周期详细过程](https://juejin.cn/post/6966158157202587662)
 
 
 
@@ -795,6 +826,8 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 #### 实践
 
 - [跟踪源码来分析一个 empty file=404 的坑， WebFlux 我要鲨了你呀！ | 编码妙♂妙♂屋](https://www.skypyb.com/2021/01/jishu/1729/)
+
+
 
 ## Spring&SpringBoot&SpringCloud
 
@@ -957,6 +990,17 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 ## 框架技术
 
 - [Java SPI 使用及原理分析-董宗磊的博客 ](https://dongzl.github.io/2021/01/16/04-Java-Service-Provider-Interface/)
+
+
+
+### 源码解读
+
+- [SpringBoot源码分析 - yuanmabiji 源码笔记](https://github.com/yuanmabiji/spring-boot-2.1.0.RELEASE)
+
+- [Spring 源码解析系列 - chen_hao - 2019](https://www.cnblogs.com/java-chen-hao/category/1480619.html)
+- [Spring 源码专题 - 程序员DMZ - 2020](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU5ODg2Njk4OA==&action=getalbum&album_id=1392938760375238659&scene=173#wechat_redirect)
+
+
 
 
 
@@ -1377,6 +1421,44 @@ List<DocErrorSet> collect = list.stream().collect(
 - [java经验集锦 - 星朝-cnblogs](https://www.cnblogs.com/jpfss/tag/java%E7%BB%8F%E9%AA%8C%E9%9B%86%E9%94%A6/)
 - [java从jar包中读取资源文件](https://jieniyimiao.blog.csdn.net/article/details/88807557)
 
+- 锁粒度优化：[vivo 自研鲁班分布式 ID 服务实践](https://mp.weixin.qq.com/s/bDId_jfUqjMhAHoV35K-wA)
+  - 客户端SDK再自增值使用完或一定时间后会向服务端请求新的id生成，这个时候需要保证该次请求在多线程并发时是只请求一次，当前设计是基于用户申请ID的接入配置，组成为key，去获取对应key的对象锁，以减少同步代码块锁的粒度，避免不同接入配置去在并发去远程获取新的id时，锁粒度过大，造成线程的阻塞，从而提升在高并发场景下的性能。
+
+- 算法学习经验参考：https://time.geekbang.org/column/article/81835
+
+```properties
+yongxiang
+我的学习历程是怎样的？
+
+刚开始学习启动晚了，再加上学习方法不对、静不下心来，始终不得要领，课后题看了也完全没有概念，很是烦躁。
+
+最近两个月终于摸索到了合适清晰的学习方法：正如老师的文章一样，把注意点放在发现问题，解决问题上。
+
+采用笨办法，拿一堆A4白纸、铅笔、便利贴，在便利贴上写下要学习的章节、1个小时的起始学习时间、完成后面说的步骤的哪几部分，然后郑重地贴在白纸上，最后在规定的时间结束时，写下完成的情况。
+
+把学习的过程分解成以下的步骤：
+1. 归纳提炼问题：先把标题、课前问题，课后问题写下来，把概述和段标题提炼成问题写下来，把文章的内容分解归纳成一个接一个问题写下来；
+2. 查找答案：然后，将文章读一遍，看看前面问题的答案在哪里，文章还有没有回答其他的问题；
+3. 动手实践：对着代码将文章中的算法过程的图自己推导画一遍，找出算法的关键线索在哪里；最后，将代码回忆输入编辑器，将文章图片中的例子数据输入进行测试，同时加入打印日志观察顺序过程，看看自己回忆输入的代码犯了什么错误，记录下来。
+
+这样一遍下来，心中终于感觉踏实了，自己不用看文章也能写出代码来了，感觉掌握了这个算法的思想，紧跟老师的思路。
+
+这两个多月，基本上每个周末都会去麦当劳学习（找了很多地方，发现只有在麦当劳能静下心来学习，学习效率最高）。每次有新的章节先学新的，如果章节中有联系前面章节的，抓紧把这些章节的进度赶上去。睡前有空，就翻一遍每次学习记录的笔记，回忆一下。
+
+目前的学习进度是多少？
+
+目前终于完成了大概70%的章节的学习，当然这一轮还没结束，课后题也还没开始完成，有些章节学了又忘了，对复杂度分析还是不熟练。我想还需要再重点突破一下，然后再来回滚动学习两遍。
+
+这门课，我收获了什么？
+
+一是，找到了合适的学习方法：问题、动手、分解，以及合适的场所；二是，收获了自信心，相信自己能学会算法；三是，现在看其他书籍、代码的时候，会注意它使用了什么数据结构与算法来，有什么优缺点，不像以前，即使看到了也不知道是什么。
+
+最后，非常感谢王争老师，把这么宝贵的经验分享出来，提供了深入浅出、联系实际的文章。让我觉得，自己有希望成为一位真正的软件工程师，不是一辈子打杂。
+
+路漫且长，终于有了点光，可以继续赶路。
+作者回复: 老弟，写的太好了，有点感动！我觉得我做了一件非常有意义的事情。
+```
+
 
 
 # Linux
@@ -1468,6 +1550,12 @@ Linux
 
 
 
+### 算术技巧
+
+- [Java两整数相除向上取整](https://blog.csdn.net/gao_zhennan/article/details/121625485)
+
+
+
 # 开发应用
 
 ## 接口开发
@@ -1537,6 +1625,73 @@ Linux
 
 
 
+# 场景设计
+
+- [系统设计面试：内幕指南（中文翻译）](https://github.com/Admol/SystemDesign)
+- [Java面试知识点总结-场景题](https://blog.nowcoder.net/n/33d0033550d24bf49841858f1b2091aa)
+
+
+
+
+
+## 高并发场景
+
+### 设计一个分布式限流系统
+
+- 设计一个分布式限流系统可以通过以下步骤进行：
+  1. 定义限流策略：首先需要确定限流的策略，例如基于固定窗口、滑动窗口、令牌桶等算法。选择适合业务需求的限流算法，并确定限流的阈值和单位时间。
+  2. 分布式存储：为了支持分布式限流，需要选择一种合适的分布式存储系统，例如Redis、ZooKeeper或者分布式数据库。这将用于存储限流规则和统计信息。
+  3. 限流器组件：设计一个限流器组件，该组件负责接收请求并判断是否需要进行限流。可以使用分布式锁来保证限流器的线程安全性。限流器组件可以根据限流策略和存储的限流规则，计算每个单位时间内的请求量并判断是否需要进行限流。
+  4. 分布式计数器：使用分布式存储系统来实现分布式计数器，用于统计每个单位时间内的请求量。可以使用Redis的INCR命令或者分布式数据库的原子操作来实现递增计数。
+  5. 限流判断：在限流器组件中，根据限流策略和分布式计数器的统计结果，进行限流判断。如果当前请求量超过阈值，则拒绝请求；否则，允许请求通过，并更新计数器的值。
+  6. 定期重置计数器：为了保证限流策略的准确性，需要定期重置计数器。可以使用定时任务或者定时器来触发重置操作，使计数器能够在新的单位时间开始时重新计数。
+  7. 高可用性和负载均衡：考虑分布式限流系统的高可用性和负载均衡，可以使用多个限流器组件进行部署，并通过负载均衡器将请求均匀分发到不同的限流器组件上。这样可以提高系统的可用性，并分摊请求的处理负载。
+  8. 监控和报警：为了监控系统的运行情况和限流效果，可以设计监控和报警机制。可以收集限流器组件的请求量、通过量和拒绝量等数据，并设置阈值进行监控，当达到预设的阈值时，触发报警通知。
+
+- 注意：
+  - 为了避免并发的请求阻塞，需考虑利用MQ等组件进行异步存储设计，避免请求阻塞
+
+- 参考资料：
+  - [Java项目如何实现限流？ - 掘金 (juejin.cn)](https://juejin.cn/post/7116682342726369316)
+  - [系统设计 | 分布式限流器](https://zhuanlan.zhihu.com/p/479901962)
+  - [系统设计：设计一个分布式限流器](https://jinglingwang.cn/archives/designaratelimiter)
+  - [阿里巴巴开源限流系统 Sentinel 全解析](https://blog.csdn.net/qq1353424111/article/details/109069525)
+
+
+
+
+
+### 设计一个类似微信抢红包的系统
+
+
+
+
+
+
+
+### 设计一个停车场计费系统
+
+
+
+
+
+## 算法场景
+
+### 如何读取1TB的数字文件并进行排序
+
+- 1TB数据使用32GB内存如何排序 
+  1. 把磁盘上的1TB数据分割为40块（chunks），每份25GB。（注意，要留一些系统空间！）
+  2. 顺序将每份25GB数据读入内存，使用quick sort算法排序。
+  3. 把排序好的数据（也是25GB）存放回磁盘。
+  4. 循环40次，现在，所有的40个块都已经各自排序了。（剩下的工作就是如何把它们合并排序！）
+  5. 从40个块中分别读取25G/40=0.625G入内存（40 input buffers）。
+  6. 执行40路合并，并将合并结果临时存储于2GB 基于内存的输出缓冲区中。当缓冲区写满2GB时，写入硬盘上最终文件，并清空输出缓冲区；当40个输入缓冲区中任何一个处理完毕时，写入该缓冲区所对应的块中的下一个0.625GB，直到全部处理完成。
+- 参考：[1TB的数据需要排序，但只有32GB的内存如何排序处理](https://blog.csdn.net/young_0609/article/details/101350653)
+
+
+
+
+
 
 
 # 生产案例
@@ -1549,10 +1704,36 @@ Linux
 
 
 
-## 业务开发常见错误
+## 业务常见错误
 
 - [笔记-业务开发常见错误](https://blog.csdn.net/belongtocode/article/details/113684078)
 - [专栏-业务开发常见错误100例](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/Java%20%E4%B8%9A%E5%8A%A1%E5%BC%80%E5%8F%91%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%20100%20%E4%BE%8B)
+
+
+
+## 授权管理
+
+### 流程审批
+
+- [流程审批系统设计思路及实现方法](https://blog.csdn.net/WSRspirit/article/details/81412344)
+
+
+
+
+
+### 自动授权
+
+
+
+
+
+### 权限管理
+
+
+
+
+
+
 
 
 
