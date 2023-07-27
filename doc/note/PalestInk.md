@@ -555,6 +555,11 @@
 
 
 
+### 流式查询
+
+- [MySQL 普通查询、流式查询、游标查询以及使用 mybatis 如何实现](https://blog.csdn.net/qq_20919883/article/details/129637023)
+- 
+
 
 
 ## ClickHouse
@@ -739,6 +744,12 @@ clickhouse-client --send_logs_level=trace <<< " select  index_col from table whe
 ### 源码解读
 
 - [请别再问Spring Bean的生命周期了！](https://www.jianshu.com/p/1dec08d290c1)
+
+
+
+### 常见报错
+
+- [Spring:解决因@Async引起的循环依赖报错](https://www.cnblogs.com/iceggboom/p/14393725.html)
 
 
 
