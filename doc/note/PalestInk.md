@@ -28,6 +28,22 @@
 
 
 
+### Clazz
+
+- [【Java基础】-- isAssignableFrom的用法详细解析](https://cloud.tencent.com/developer/article/1754376)
+  - A.isAssignableFrom(B)：一个类(B)是不是继承来自于另一个父类(A)，一个接口(A)是不是实现了另外一个接口(B)，或者两个类相同
+  - 这里比较的维度不是实例对象，而是类本身，因为这个方法本身就是`Class`类的方法，判断的肯定是和类信息相关的
+
+
+
+### 序列化
+
+- [json 反序列化多层嵌套泛型类与 java 中的Type类型笔记](https://cloud.tencent.com/developer/article/1460768)
+- [Jaskson处理复杂的泛型对象-非最优方案](https://hicode.club/articles/2018/03/18/1550590751627.html)
+  - 利用 `TypeFactory.constructParametricType()`进行`JavaType`的类型构造：从内到外进行构造
+
+
+
 ## IO流
 
 - [InputStream,String,File相互转化](https://www.cnblogs.com/cpcpc/archive/2011/07/08/2122996.html)
@@ -1349,6 +1365,16 @@ List<DocErrorSet> collect = list.stream().collect(
 
 
 
+## 常用命令
+
+- 代码量统计
+
+```sh
+git log --since="2023-01-01" --until="2023-08-06" --author="yolenlew" --pretty=tformat: --numstat|gawk '{add += 1;subs+=2; loc += 12} END {printf "added lines: %s remove lines: %s total lines: %s\n",add,subs,loc}'
+```
+
+
+
 # 前端技术
 
 
@@ -1376,6 +1402,45 @@ List<DocErrorSet> collect = list.stream().collect(
 - [除了Xshell，还有哪些趁手的Linux终端工具](https://blog.csdn.net/qq_42534026/article/details/105890922)
   - MobaXterm
   - FinalShell
+
+
+
+## 开发工具
+
+### IDE-Idea
+
+#### 插件
+
+- 新增：Sequence Diagram时序图插件
+
+- 20230730已安装插件参考
+
+![img/image-20230730132806202.png](image-20230730132806202.png)
+
+
+
+#### 环境配置
+
+- maven：软件、仓库、JDK等配置
+- Terminal：win的cmd替换为Git的命令行工具
+
+
+
+#### 编码规范
+
+- 
+
+- 
+
+
+
+#### 主题界面
+
+- 主题：推荐`Material Oceanic`主题
+
+- IDEA如何显示方法分隔符：[IDEA如何显示方法分隔符](https://blog.csdn.net/d347091231/article/details/119485138)
+
+
 
 
 
@@ -1469,6 +1534,8 @@ yongxiang
 路漫且长，终于有了点光，可以继续赶路。
 作者回复: 老弟，写的太好了，有点感动！我觉得我做了一件非常有意义的事情。
 ```
+
+
 
 
 
@@ -1681,6 +1748,12 @@ Linux
 
 
 ### 设计一个停车场计费系统
+
+
+
+## 微博相关架构
+
+- [微博评论系统高性能高可用计算架构](https://xie.infoq.cn/article/ef59d5d60299a6cbd53dd477e)
 
 
 
